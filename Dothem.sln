@@ -1,0 +1,32 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PRESENTATION_LAYER", "Dothem\PRESENTATION_LAYER.csproj", "{A051F798-2DF3-4DB4-B791-A298B46FE960}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BUSINESS_LAYER", "BUSINESS_LAYER\BUSINESS_LAYER.csproj", "{06143257-1F49-4A11-A484-AF3F86E796E1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DATA_LAYER", "DATA_LAYER\DATA_LAYER.csproj", "{4E147064-FF77-4748-87E1-FC64A7C28E6D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A051F798-2DF3-4DB4-B791-A298B46FE960}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A051F798-2DF3-4DB4-B791-A298B46FE960}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A051F798-2DF3-4DB4-B791-A298B46FE960}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A051F798-2DF3-4DB4-B791-A298B46FE960}.Release|Any CPU.Build.0 = Release|Any CPU
+		{06143257-1F49-4A11-A484-AF3F86E796E1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{06143257-1F49-4A11-A484-AF3F86E796E1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{06143257-1F49-4A11-A484-AF3F86E796E1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{06143257-1F49-4A11-A484-AF3F86E796E1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4E147064-FF77-4748-87E1-FC64A7C28E6D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4E147064-FF77-4748-87E1-FC64A7C28E6D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4E147064-FF77-4748-87E1-FC64A7C28E6D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4E147064-FF77-4748-87E1-FC64A7C28E6D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
