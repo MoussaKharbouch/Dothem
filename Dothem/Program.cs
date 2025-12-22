@@ -16,7 +16,42 @@ namespace Dothem
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Login());
+
+            RunLoginForm();
+
         }
+
+        static void RunLoginForm()
+        {
+
+            Login Login = new Login();
+
+            /*Main Main = new Main();
+
+            do
+            {
+
+                Global.user = null;
+
+                Login = new Login();
+                DialogResult succeeded = Login.ShowDialog();
+
+                if (succeeded == DialogResult.OK)
+                {
+
+                    Main = new Main(Login.user);
+                    Main.ShowDialog();
+
+                }
+                else if (succeeded == DialogResult.Cancel)
+                    break;
+
+            } while ((Main.DialogResult == DialogResult.Retry));*/
+
+            Login.ShowDialog();
+
+        }
+
     }
+    
 }
