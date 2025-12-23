@@ -10,15 +10,13 @@ A lightweight to‑do application that lets you add tasks, set their importance,
 
 * **Task Registration**: Add new tasks with basic details.
 * **Task Status**: Each task can be in progress, completed, or pending.
-* **Task Sorting**: Sort tasks by status, importance, or creation date.
 * **Task Importance**: Every task has an importance level (low / medium / high).
 * **Local Login**: Ability to log in locally.
-* **Local Storage**: All tasks are saved on the user’s device.
+* **Database Storage**: All tasks are saved on the database.
 
 ## Additional Features
 
 * Clean and simple interface.
 * Easy task editing and deletion.
-* Counter for completed tasks.
-* Quick search through tasks.
+
 
