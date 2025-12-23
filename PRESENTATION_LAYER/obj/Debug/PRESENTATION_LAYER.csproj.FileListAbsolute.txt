@@ -22,3 +22,6 @@ C:\Users\khale\Desktop\Dothem\PRESENTATION_LAYER\obj\Debug\PRESENTATION_LAYER.ex
 C:\Users\khale\Desktop\Dothem\PRESENTATION_LAYER\obj\Debug\PRESENTATION_LAYER.pdb
 C:\Users\khale\Desktop\Dothem\PRESENTATION_LAYER\obj\Debug\AddEditTaskWindow.baml
 C:\Users\khale\Desktop\Dothem\PRESENTATION_LAYER\obj\Debug\AddEditTaskWindow.g.cs
+C:\Users\khale\Desktop\Dothem\PRESENTATION_LAYER\obj\Debug\TaskUserControl.g.cs
+C:\Users\khale\Desktop\Dothem\PRESENTATION_LAYER\obj\Debug\TaskUserControl.baml
+C:\Users\khale\Desktop\Dothem\PRESENTATION_LAYER\obj\Debug\GeneratedInternalTypeHelper.g.cs

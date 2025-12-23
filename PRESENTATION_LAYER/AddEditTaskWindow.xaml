@@ -69,13 +69,13 @@
         </Style>
     </Window.Resources>
 
-    <Grid Background="{StaticResource PanelLightBrush}" Margin="16">
+    <Grid Margin="16">
         <StackPanel>
             <TextBlock Text="Task Form" FontSize="24" FontWeight="SemiBold" Foreground="{StaticResource AccentBrush}" Margin="0,0,0,16"/>
 
             <!-- Task Name -->
             <TextBlock Text="Task Name:"/>
-            <TextBox x:Name="tbTaskName" MaxLength="50"/>
+            <TextBox x:Name="tbTaskName" MaxLength="50" Height="33"/>
 
             <!-- Status -->
             <TextBlock Text="Status:"/>

@@ -236,7 +236,7 @@
                             <TextBlock Text="All Tasks" FontWeight="Bold" Foreground="#333" Margin="4" />
 
                             <ScrollViewer Grid.Row="1" VerticalScrollBarVisibility="Auto" Margin="0,8,0,0">
-                                <StackPanel x:Name="TasksPanel" Orientation="Vertical" Margin="0,0,0,8"/>
+                                <local:TaskUserControl/>
                             </ScrollViewer>
                         </Grid>
                     </Border>

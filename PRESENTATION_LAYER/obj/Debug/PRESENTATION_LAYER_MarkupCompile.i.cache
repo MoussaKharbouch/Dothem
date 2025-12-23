@@ -10,11 +10,11 @@ none
 false
 DEBUG;TRACE
 C:\Users\khale\Desktop\Dothem\PRESENTATION_LAYER\App.xaml
-329082880
+454510065
 
-82022848715
+9-1523679722
 14976557711
-AddEditTaskWindow.xaml;MainWindow.xaml;Users\LoginWindow.xaml;
+AddEditTaskWindow.xaml;MainWindow.xaml;TaskUserControl.xaml;Users\LoginWindow.xaml;
 
-False
+True
 
