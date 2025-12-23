@@ -6,10 +6,10 @@ using System.Threading.Tasks;
 using System.Data;
 using DATA_LAYER;
 
-namespace DVLDBusinessLayer
+namespace BusinessLayer
 {
 
-    public class clsUser
+    public class User
     {
 
         enum enMode { Add, Update }
@@ -18,32 +18,29 @@ namespace DVLDBusinessLayer
         public enum enStatus { Active = 1, Expired = 2, Banned = 3 }
 
         public int UserID { get; set; }
-        public int PersonID { get; set; }
 
         public string Username { get; set; }
         public string Password { get; set; }
 
         public enStatus Status { get; set; }
 
-        public clsUser()
+        public User()
         {
 
             UserID = -1;
-            PersonID = -1;
 
             Username = string.Empty;
             Password = string.Empty;
-            Status = enStatus.Expired;
+            Status = enStatus.Active;
 
             Mode = enMode.Add;
 
         }
 
-        public clsUser(int UserID, int PersonID, string Username, string Password, enStatus Status)
+        public User(int UserID, string Username, string Password, enStatus Status)
         {
 
             this.UserID = UserID;
-            this.PersonID = PersonID;
 
             this.Username = Username;
             this.Password = Password;
@@ -53,38 +50,36 @@ namespace DVLDBusinessLayer
 
         }
 
-        public static clsUser FindUser(string Username, string Password)
+        public static User FindUser(string Username, string Password)
         {
 
             int UserID = -1;
-            int PersonID = -1;
 
-            short status = 0;
+            short status = 1;
 
-            UsersData.FindUser(Username, Password, ref UserID, ref PersonID, ref status);
+            UsersData.FindUser(Username, Password, ref UserID, ref status);
 
             if (UserID == -1)
                 return null;
 
-            return new clsUser(UserID, PersonID, Username, Password, (enStatus)status);
+            return new User(UserID, Username, Password, (enStatus)status);
 
         }
 
-        public static clsUser FindUser(int UserID)
+        public static User FindUser(int UserID)
         {
 
-            int PersonID = -1;
             string Username = string.Empty;
             string Password = string.Empty;
 
             short status = 0;
 
-            UsersData.FindUser(UserID, ref PersonID, ref Username, ref Password, ref status);
+            UsersData.FindUser(UserID, ref Username, ref Password, ref status);
 
-            if (PersonID == -1)
+            if (Username == string.Empty && Password == string.Empty && status == 0)
                 return null;
 
-            return new clsUser(UserID, PersonID, Username, Password, (enStatus)status);
+            return new User(UserID, Username, Password, (enStatus)status);
 
         }
 
@@ -96,7 +91,7 @@ namespace DVLDBusinessLayer
 
             int UserID = this.UserID;
 
-            bool succeeded = UsersData.AddUser(ref UserID, PersonID, Username, Password, (short)Status);
+            bool succeeded = UsersData.AddUser(ref UserID, Username, Password, (short)Status);
 
             this.UserID = UserID;
 
@@ -110,7 +105,7 @@ namespace DVLDBusinessLayer
             if (UsersData.DoesUsernameExist(Username, UserID))
                 return false;
 
-            return UsersData.UpdateUser(UserID, PersonID, Username, Password, (short)Status);
+            return UsersData.UpdateUser(UserID, Username, Password, (short)Status);
 
         }
 

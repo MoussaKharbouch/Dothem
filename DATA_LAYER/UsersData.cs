@@ -11,7 +11,7 @@ namespace DATA_LAYER
     public static class UsersData
     {
 
-        public static void FindUser(string Username, string Password, ref int UserID, ref int PersonID, ref short Status)
+        public static void FindUser(string Username, string Password, ref int UserID, ref short Status)
         {
 
             SqlConnection connection = new SqlConnection(DataAccessSettings.ConnectionString);
@@ -32,7 +32,6 @@ namespace DATA_LAYER
                 if (reader.Read())
                 {
 
-                    PersonID = (int)reader["PersonID"];
                     UserID = (int)reader["UserID"];
                     Status = Convert.ToInt16(reader["status"].ToString());
 
@@ -48,7 +47,7 @@ namespace DATA_LAYER
 
         }
 
-        public static void FindUser(int UserID, ref int PersonID, ref string Username, ref string Password, ref short Status)
+        public static void FindUser(int UserID, ref string Username, ref string Password, ref short Status)
         {
 
             SqlConnection connection = new SqlConnection(DataAccessSettings.ConnectionString);
@@ -68,7 +67,6 @@ namespace DATA_LAYER
                 if (reader.Read())
                 {
 
-                    PersonID = (int)reader["PersonID"];
                     Username = reader["Username"].ToString();
                     Password = reader["Password"].ToString();
                     Status = Convert.ToInt16(reader["status"].ToString());
@@ -215,7 +213,7 @@ namespace DATA_LAYER
 
         }
 
-        public static bool AddUser(ref int UserID, int PersonID, string Username, string Password, short Status)
+        public static bool AddUser(ref int UserID, string Username, string Password, short Status)
         {
 
             UserID = -1;
@@ -223,20 +221,17 @@ namespace DATA_LAYER
             SqlConnection connection = new SqlConnection(DataAccessSettings.ConnectionString);
 
             string query = @"INSERT INTO [dbo].[Users]
-                                ([PersonID]
-                                ,[Username]
+                                ([Username]
                                 ,[Password]
                                 ,[status])
                             VALUES
-                                (@PersonID
-                                ,@Username
+                                (@Username
                                 ,@Password
                                 ,@Status);
                             SELECT SCOPE_IDENTITY() as UserID";
 
             SqlCommand command = new SqlCommand(query, connection);
 
-            command.Parameters.AddWithValue("@PersonID", PersonID);
             command.Parameters.AddWithValue("@Username", Username);
             command.Parameters.AddWithValue("@Password", Password);
             command.Parameters.AddWithValue("@Status", Status);
@@ -261,7 +256,7 @@ namespace DATA_LAYER
 
         }
 
-        public static bool UpdateUser(int UserID, int PersonID, string Username, string Password, short Status)
+        public static bool UpdateUser(int UserID, string Username, string Password, short Status)
         {
 
             int rowsAffected = 0;
@@ -269,15 +264,13 @@ namespace DATA_LAYER
             SqlConnection connection = new SqlConnection(DataAccessSettings.ConnectionString);
 
             string query = @"UPDATE [dbo].[Users]
-                             SET [PersonID] = @PersonID
-                                 ,[Username] = @Username
+                             SET [Username] = @Username
                                  ,[Password] = @Password
                                  ,[status] = @Status
                               WHERE UserID = @UserID";
 
             SqlCommand command = new SqlCommand(query, connection);
 
-            command.Parameters.AddWithValue("@PersonID", PersonID);
             command.Parameters.AddWithValue("@Username", Username);
             command.Parameters.AddWithValue("@Password", Password);
             command.Parameters.AddWithValue("@Status", Status);
@@ -365,4 +358,5 @@ namespace DATA_LAYER
         }
 
     }
+
 }

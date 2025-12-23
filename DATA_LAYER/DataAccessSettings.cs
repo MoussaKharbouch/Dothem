@@ -10,7 +10,7 @@ namespace DATA_LAYER
     static internal class DataAccessSettings
     {
 
-        static public string ConnectionString = "Server=.;Database=DVLD;User Id=sa;Password=sa123456;";
+        static public string ConnectionString = "Server=.;Database=Dothem;User Id=sa;Password=sa123456;";
 
     }
 
