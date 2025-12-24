@@ -6,10 +6,10 @@ using System.Threading.Tasks;
 using System.Data;
 using DATA_LAYER;
 
-namespace BusinessLayer
+namespace BUSINESS_LAYER
 {
 
-    public class User
+    public class clsUser
     {
 
         enum enMode { Add, Update }
@@ -24,7 +24,7 @@ namespace BusinessLayer
 
         public enStatus Status { get; set; }
 
-        public User()
+        public clsUser()
         {
 
             UserID = -1;
@@ -37,7 +37,7 @@ namespace BusinessLayer
 
         }
 
-        public User(int UserID, string Username, string Password, enStatus Status)
+        public clsUser(int UserID, string Username, string Password, enStatus Status)
         {
 
             this.UserID = UserID;
@@ -50,7 +50,7 @@ namespace BusinessLayer
 
         }
 
-        public static User FindUser(string Username, string Password)
+        public static clsUser FindUser(string Username, string Password)
         {
 
             int UserID = -1;
@@ -62,11 +62,11 @@ namespace BusinessLayer
             if (UserID == -1)
                 return null;
 
-            return new User(UserID, Username, Password, (enStatus)status);
+            return new clsUser(UserID, Username, Password, (enStatus)status);
 
         }
 
-        public static User FindUser(int UserID)
+        public static clsUser FindUser(int UserID)
         {
 
             string Username = string.Empty;
@@ -79,7 +79,7 @@ namespace BusinessLayer
             if (Username == string.Empty && Password == string.Empty && status == 0)
                 return null;
 
-            return new User(UserID, Username, Password, (enStatus)status);
+            return new clsUser(UserID, Username, Password, (enStatus)status);
 
         }
 

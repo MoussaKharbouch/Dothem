@@ -12,7 +12,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
-using BusinessLayer;
+using BUSINESS_LAYER;
 
 namespace PRESENTATION_LAYER
 {
@@ -29,7 +29,8 @@ namespace PRESENTATION_LAYER
             InitializeComponent();
 
             //to test main window directly
-            MainWindow MainWindow = new MainWindow(User.FindUser("admin", "admin"));
+            General.User = clsUser.FindUser("admin", "admin");
+            MainWindow MainWindow = new MainWindow();
             MainWindow.Show();
             this.Close();
 
@@ -43,7 +44,7 @@ namespace PRESENTATION_LAYER
         private void Login(string Username, string Password)
         {
 
-            User user = User.FindUser(Username, Password);
+            clsUser user = clsUser.FindUser(Username, Password);
 
             if(user == null)
             {
@@ -51,16 +52,16 @@ namespace PRESENTATION_LAYER
                 return;
             }
 
-            if (user.Status == User.enStatus.Expired)
+            if (user.Status == clsUser.enStatus.Expired)
             {
                 MessageBox.Show("Your account has expired. Please contact support.");
             }
-            else if (user.Status == User.enStatus.Banned)
+            else if (user.Status == clsUser.enStatus.Banned)
             {
                 MessageBox.Show("Your account has been banned. Please contact support.");
             }
 
-            MainWindow MainWindow = new MainWindow(user);
+            MainWindow MainWindow = new MainWindow();
             MainWindow.Show();
 
             this.Close();

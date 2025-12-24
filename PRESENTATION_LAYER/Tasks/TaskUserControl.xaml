@@ -6,8 +6,8 @@
              xmlns:local="clr-namespace:PRESENTATION_LAYER"
              mc:Ignorable="d" 
              d:DesignHeight="80" d:DesignWidth="350"
-             Height="80" MinHeight="80" MaxHeight="80"
-             VerticalAlignment="Top">
+             MinHeight="80"
+             VerticalAlignment="Top" Loaded="UserControl_Loaded">
 
     <Border CornerRadius="8" Background="White" BorderBrush="#FFE6E9F0" BorderThickness="1" Padding="12" Margin="6">
         <Border.Effect>
@@ -21,18 +21,18 @@
             </Grid.ColumnDefinitions>
 
             <!-- Checkbox for completion -->
-            <CheckBox x:Name="chkCompleted" VerticalAlignment="Center" Margin="0,0,12,0"/>
+            <CheckBox x:Name="chkCompleted" VerticalAlignment="Top" Margin="0,4,12,0" Click="chkCompleted_Click"/>
 
             <!-- Left: Task Info -->
-            <StackPanel Grid.Column="1" Orientation="Vertical" VerticalAlignment="Center">
+            <StackPanel Grid.Column="1" Orientation="Vertical" VerticalAlignment="Top">
                 <TextBlock x:Name="tbTaskName" Text="Task Name" FontSize="16" FontWeight="SemiBold" Foreground="#333"/>
                 <TextBlock x:Name="tbDescription" Text="Task description goes here..." FontSize="12" Foreground="#666" TextWrapping="Wrap" Margin="0,4,0,0"/>
             </StackPanel>
 
             <!-- Right: Optional icons -->
             <StackPanel Grid.Column="2" Orientation="Horizontal" VerticalAlignment="Center">
-                <Button Content="✏️" Width="28" Height="28" Background="#FF2B34AF" Foreground="White" BorderThickness="0" Cursor="Hand" Margin="0,0,6,0"/>
-                <Button Content="🗑️" Width="28" Height="28" Background="#FFEE5C5C" Foreground="White" BorderThickness="0" Cursor="Hand"/>
+                <Button x:Name="btnEdit" Content="✏️" Width="28" Height="28" Background="#FF2B34AF" Foreground="White" BorderThickness="0" Cursor="Hand" Margin="0,0,6,0" Click="btnEdit_Click"/>
+                <Button x:Name="btnDelete" Content="🗑️" Width="28" Height="28" Background="#FFEE5C5C" Foreground="White" BorderThickness="0" Cursor="Hand" Click="btnDelete_Click"/>
             </StackPanel>
         </Grid>
     </Border>

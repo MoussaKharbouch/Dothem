@@ -41,6 +41,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="DataAccessSettings.cs" />
+    <Compile Include="TasksData.cs" />
+    <Compile Include="TaskTypesData.cs" />
     <Compile Include="UsersData.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

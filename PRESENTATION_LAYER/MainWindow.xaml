@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:PRESENTATION_LAYER"
         mc:Ignorable="d"
-        Title="Dothem" Height="500" Width="800" Icon="/App_Icon.png" Opacity="0.98" WindowStartupLocation="CenterScreen">
+        Title="Dothem" Height="500" Width="800" Icon="/App_Icon.png" Opacity="0.98" WindowStartupLocation="CenterScreen" Loaded="Window_Loaded" MinHeight="500">
     <Window.Resources>
         <!-- Theme brushes -->
         <SolidColorBrush x:Key="AccentBrush" Color="#FF2B34AF"/>
@@ -145,13 +145,6 @@
                             </Grid>
                         </Border>
                         <ControlTemplate.Triggers>
-                            <Trigger Property="IsMouseOver" Value="True">
-                                <Setter TargetName="Bd" Property="Background" Value="#FFF0F4FF"/>
-                            </Trigger>
-                            <Trigger Property="IsSelected" Value="True">
-                                <Setter TargetName="Bd" Property="Background" Value="{StaticResource AccentBrush}"/>
-                                <Setter Property="Foreground" Value="White"/>
-                            </Trigger>
                             <Trigger Property="IsEnabled" Value="False">
                                 <Setter TargetName="Bd" Property="Opacity" Value="0.5"/>
                             </Trigger>
@@ -169,34 +162,62 @@
         </Grid.ColumnDefinitions>
 
         <!-- Left navigation / types column -->
-        <Border Grid.Column="0" BorderBrush="Black" BorderThickness="1"
-                Background="{StaticResource PanelDarkBrush}" CornerRadius="0,2,2,0" Padding="8">
+        <Border Grid.Column="0"
+        BorderBrush="Black"
+        BorderThickness="1"
+        Background="{StaticResource PanelDarkBrush}"
+        CornerRadius="0,2,2,0"
+        Padding="8">
+
             <Grid>
                 <Grid.RowDefinitions>
-                    <RowDefinition Height="102"/>
+                    <RowDefinition Height="56"/>
                     <RowDefinition/>
                 </Grid.RowDefinitions>
-
                 <Border Grid.Row="0" Background="Transparent">
                     <TextBlock Text="Task Types"
-                               FontFamily="Segoe UI Semibold"
-                               FontSize="22"
-                               Foreground="{StaticResource TextPrimaryBrush}"
-                               HorizontalAlignment="Center"
-                               VerticalAlignment="Center"
-                               TextAlignment="Center"/>
+                       FontFamily="Segoe UI Semibold"
+                       FontSize="22"
+                       Foreground="{StaticResource TextPrimaryBrush}"
+                       HorizontalAlignment="Center"
+                       VerticalAlignment="Center"
+                       TextAlignment="Center"/>
                 </Border>
+                <Grid Grid.Row="1" Margin="0,8,0,0">
+                    <Grid.RowDefinitions>
+                        <RowDefinition/>
+                        <RowDefinition Height="Auto" MinHeight="41.04"/>
+                    </Grid.RowDefinitions>
+                    <Border Grid.Row="0"
+                    Background="White"
+                    CornerRadius="8"
+                    BorderBrush="#FFE6E9F0"
+                    BorderThickness="1"
+                    Padding="4">
+                        <ListBox x:Name="lbTaskTypes"
+                         ItemsSource="{Binding TaskTypes}"
+                         ItemContainerStyle="{StaticResource TaskTypeItemStyle}"
+                         Background="Transparent"
+                         BorderThickness="0"
+                         FontSize="16"
+                         SelectionMode="Single"
+                         ScrollViewer.VerticalScrollBarVisibility="Auto" SelectionChanged="lbTaskTypes_SelectionChanged"/>
+                    </Border>
+                    <Button Grid.Row="1"
+                            Content="✎"
+                    Width="36"
+                    Margin="0,10,0,0"
+                    HorizontalAlignment="Center"
+                    Background="White"
+                    Foreground="{StaticResource AccentBrush}"
+                    BorderBrush="{StaticResource AccentBrush}"
+                    BorderThickness="1"
+                    FontSize="14"
+                    FontWeight="SemiBold"
+                    Cursor="Hand"
+                    ToolTip="Edit Task Types"/>
 
-                <!-- Task types ListBox -->
-                <ScrollViewer Grid.Row="1" VerticalScrollBarVisibility="Auto" Margin="0,8,0,0" Focusable="False">
-                    <ListBox x:Name="TaskTypesListBox"
-                             Background="Transparent"
-                             BorderThickness="0"
-                             ItemContainerStyle="{StaticResource TaskTypeItemStyle}"
-                             SelectionMode="Single"
-                             Focusable="False">
-                    </ListBox>
-                </ScrollViewer>
+                </Grid>
             </Grid>
         </Border>
 
@@ -235,9 +256,10 @@
 
                             <TextBlock Text="All Tasks" FontWeight="Bold" Foreground="#333" Margin="4" />
 
-                            <ScrollViewer Grid.Row="1" VerticalScrollBarVisibility="Auto" Margin="0,8,0,0">
-                                <local:TaskUserControl/>
+                            <ScrollViewer Grid.Row="1" VerticalScrollBarVisibility="Auto" HorizontalScrollBarVisibility="Disabled" Margin="0,8,0,0">
+                                <StackPanel x:Name="spTasks" Orientation="Vertical"/>
                             </ScrollViewer>
+
                         </Grid>
                     </Border>
                 </Grid>

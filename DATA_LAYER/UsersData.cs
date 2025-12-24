@@ -329,7 +329,7 @@ namespace DATA_LAYER
 
             SqlConnection connection = new SqlConnection(DataAccessSettings.ConnectionString);
 
-            string query = "SELECT * FROM Users";
+            string query = "SELECT * FROM [dbo].[Users]";
 
             SqlCommand command = new SqlCommand(query, connection);
 
