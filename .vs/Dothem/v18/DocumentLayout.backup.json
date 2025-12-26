@@ -3,64 +3,24 @@
   "WorkspaceRootPath": "C:\\Users\\khale\\Desktop\\Dothem\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{130E8443-B39A-44B1-8949-32CB18C44018}|PRESENTATION_LAYER\\PRESENTATION_LAYER.csproj|c:\\users\\khale\\desktop\\dothem\\presentation_layer\\tasktypes\\addedittasktypewindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{130E8443-B39A-44B1-8949-32CB18C44018}|PRESENTATION_LAYER\\PRESENTATION_LAYER.csproj|solutionrelative:presentation_layer\\tasktypes\\addedittasktypewindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{130E8443-B39A-44B1-8949-32CB18C44018}|PRESENTATION_LAYER\\PRESENTATION_LAYER.csproj|C:\\Users\\khale\\Desktop\\Dothem\\presentation_layer\\tasktypes\\addedittasktypewindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{130E8443-B39A-44B1-8949-32CB18C44018}|PRESENTATION_LAYER\\PRESENTATION_LAYER.csproj|solutionrelative:presentation_layer\\tasktypes\\addedittasktypewindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{130E8443-B39A-44B1-8949-32CB18C44018}|PRESENTATION_LAYER\\PRESENTATION_LAYER.csproj|C:\\Users\\khale\\Desktop\\Dothem\\presentation_layer\\tasks\\addedittaskwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{130E8443-B39A-44B1-8949-32CB18C44018}|PRESENTATION_LAYER\\PRESENTATION_LAYER.csproj|solutionrelative:presentation_layer\\tasks\\addedittaskwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{130E8443-B39A-44B1-8949-32CB18C44018}|PRESENTATION_LAYER\\PRESENTATION_LAYER.csproj|C:\\Users\\khale\\Desktop\\Dothem\\presentation_layer\\tasks\\addedittaskwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{130E8443-B39A-44B1-8949-32CB18C44018}|PRESENTATION_LAYER\\PRESENTATION_LAYER.csproj|solutionrelative:presentation_layer\\tasks\\addedittaskwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{130E8443-B39A-44B1-8949-32CB18C44018}|PRESENTATION_LAYER\\PRESENTATION_LAYER.csproj|c:\\users\\khale\\desktop\\dothem\\presentation_layer\\users\\loginwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{130E8443-B39A-44B1-8949-32CB18C44018}|PRESENTATION_LAYER\\PRESENTATION_LAYER.csproj|solutionrelative:presentation_layer\\users\\loginwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{130E8443-B39A-44B1-8949-32CB18C44018}|PRESENTATION_LAYER\\PRESENTATION_LAYER.csproj|c:\\users\\khale\\desktop\\dothem\\presentation_layer\\users\\signupwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{130E8443-B39A-44B1-8949-32CB18C44018}|PRESENTATION_LAYER\\PRESENTATION_LAYER.csproj|solutionrelative:presentation_layer\\users\\signupwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{130E8443-B39A-44B1-8949-32CB18C44018}|PRESENTATION_LAYER\\PRESENTATION_LAYER.csproj|c:\\users\\khale\\desktop\\dothem\\presentation_layer\\users\\loginwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{130E8443-B39A-44B1-8949-32CB18C44018}|PRESENTATION_LAYER\\PRESENTATION_LAYER.csproj|solutionrelative:presentation_layer\\users\\loginwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{130E8443-B39A-44B1-8949-32CB18C44018}|PRESENTATION_LAYER\\PRESENTATION_LAYER.csproj|c:\\users\\khale\\desktop\\dothem\\presentation_layer\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{130E8443-B39A-44B1-8949-32CB18C44018}|PRESENTATION_LAYER\\PRESENTATION_LAYER.csproj|solutionrelative:presentation_layer\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{130E8443-B39A-44B1-8949-32CB18C44018}|PRESENTATION_LAYER\\PRESENTATION_LAYER.csproj|c:\\users\\khale\\desktop\\dothem\\presentation_layer\\users\\loginwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{130E8443-B39A-44B1-8949-32CB18C44018}|PRESENTATION_LAYER\\PRESENTATION_LAYER.csproj|solutionrelative:presentation_layer\\users\\loginwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{130E8443-B39A-44B1-8949-32CB18C44018}|PRESENTATION_LAYER\\PRESENTATION_LAYER.csproj|C:\\Users\\khale\\Desktop\\Dothem\\presentation_layer\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{130E8443-B39A-44B1-8949-32CB18C44018}|PRESENTATION_LAYER\\PRESENTATION_LAYER.csproj|solutionrelative:presentation_layer\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{130E8443-B39A-44B1-8949-32CB18C44018}|PRESENTATION_LAYER\\PRESENTATION_LAYER.csproj|c:\\users\\khale\\desktop\\dothem\\presentation_layer\\app.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{130E8443-B39A-44B1-8949-32CB18C44018}|PRESENTATION_LAYER\\PRESENTATION_LAYER.csproj|solutionrelative:presentation_layer\\app.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{130E8443-B39A-44B1-8949-32CB18C44018}|PRESENTATION_LAYER\\PRESENTATION_LAYER.csproj|c:\\users\\khale\\desktop\\dothem\\presentation_layer\\app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
-      "RelativeMoniker": "D:0:0:{130E8443-B39A-44B1-8949-32CB18C44018}|PRESENTATION_LAYER\\PRESENTATION_LAYER.csproj|solutionrelative:presentation_layer\\app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{130E8443-B39A-44B1-8949-32CB18C44018}|PRESENTATION_LAYER\\PRESENTATION_LAYER.csproj|c:\\users\\khale\\desktop\\dothem\\presentation_layer\\users\\signupwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{130E8443-B39A-44B1-8949-32CB18C44018}|PRESENTATION_LAYER\\PRESENTATION_LAYER.csproj|solutionrelative:presentation_layer\\users\\signupwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{130E8443-B39A-44B1-8949-32CB18C44018}|PRESENTATION_LAYER\\PRESENTATION_LAYER.csproj|C:\\Users\\khale\\Desktop\\Dothem\\presentation_layer\\tasks\\taskusercontrol.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{130E8443-B39A-44B1-8949-32CB18C44018}|PRESENTATION_LAYER\\PRESENTATION_LAYER.csproj|solutionrelative:presentation_layer\\tasks\\taskusercontrol.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{130E8443-B39A-44B1-8949-32CB18C44018}|PRESENTATION_LAYER\\PRESENTATION_LAYER.csproj|C:\\Users\\khale\\Desktop\\Dothem\\presentation_layer\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{130E8443-B39A-44B1-8949-32CB18C44018}|PRESENTATION_LAYER\\PRESENTATION_LAYER.csproj|solutionrelative:presentation_layer\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4E147064-FF77-4748-87E1-FC64A7C28E6D}|DATA_LAYER\\DATA_LAYER.csproj|C:\\Users\\khale\\Desktop\\Dothem\\data_layer\\tasktypesdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4E147064-FF77-4748-87E1-FC64A7C28E6D}|DATA_LAYER\\DATA_LAYER.csproj|solutionrelative:data_layer\\tasktypesdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{06143257-1F49-4A11-A484-AF3F86E796E1}|BUSINESS_LAYER\\BUSINESS_LAYER.csproj|C:\\Users\\khale\\Desktop\\Dothem\\business_layer\\tasktype.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{06143257-1F49-4A11-A484-AF3F86E796E1}|BUSINESS_LAYER\\BUSINESS_LAYER.csproj|solutionrelative:business_layer\\tasktype.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{130E8443-B39A-44B1-8949-32CB18C44018}|PRESENTATION_LAYER\\PRESENTATION_LAYER.csproj|c:\\users\\khale\\desktop\\dothem\\presentation_layer\\tasktypes\\addedittasktypewindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{130E8443-B39A-44B1-8949-32CB18C44018}|PRESENTATION_LAYER\\PRESENTATION_LAYER.csproj|solutionrelative:presentation_layer\\tasktypes\\addedittasktypewindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -74,189 +34,66 @@
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "AddEditTaskTypeWindow.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\khale\\Desktop\\Dothem\\PRESENTATION_LAYER\\TaskTypes\\AddEditTaskTypeWindow.xaml.cs",
-              "RelativeDocumentMoniker": "PRESENTATION_LAYER\\TaskTypes\\AddEditTaskTypeWindow.xaml.cs",
-              "ToolTip": "C:\\Users\\khale\\Desktop\\Dothem\\PRESENTATION_LAYER\\TaskTypes\\AddEditTaskTypeWindow.xaml.cs",
-              "RelativeToolTip": "PRESENTATION_LAYER\\TaskTypes\\AddEditTaskTypeWindow.xaml.cs",
-              "ViewState": "AgIAAEcAAAAAAAAAAAAmwFsAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-26T15:24:37.376Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "AddEditTaskWindow.xaml",
-              "DocumentMoniker": "C:\\Users\\khale\\Desktop\\Dothem\\PRESENTATION_LAYER\\Tasks\\AddEditTaskWindow.xaml",
-              "RelativeDocumentMoniker": "PRESENTATION_LAYER\\Tasks\\AddEditTaskWindow.xaml",
-              "ToolTip": "C:\\Users\\khale\\Desktop\\Dothem\\PRESENTATION_LAYER\\Tasks\\AddEditTaskWindow.xaml*",
-              "RelativeToolTip": "PRESENTATION_LAYER\\Tasks\\AddEditTaskWindow.xaml*",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-12-26T15:20:41.369Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "AddEditTaskTypeWindow.xaml",
-              "DocumentMoniker": "C:\\Users\\khale\\Desktop\\Dothem\\PRESENTATION_LAYER\\TaskTypes\\AddEditTaskTypeWindow.xaml",
-              "RelativeDocumentMoniker": "PRESENTATION_LAYER\\TaskTypes\\AddEditTaskTypeWindow.xaml",
-              "ToolTip": "C:\\Users\\khale\\Desktop\\Dothem\\PRESENTATION_LAYER\\TaskTypes\\AddEditTaskTypeWindow.xaml*",
-              "RelativeToolTip": "PRESENTATION_LAYER\\TaskTypes\\AddEditTaskTypeWindow.xaml*",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-12-26T17:29:44.812Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "AddEditTaskWindow.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\khale\\Desktop\\Dothem\\PRESENTATION_LAYER\\Tasks\\AddEditTaskWindow.xaml.cs",
-              "RelativeDocumentMoniker": "PRESENTATION_LAYER\\Tasks\\AddEditTaskWindow.xaml.cs",
-              "ToolTip": "C:\\Users\\khale\\Desktop\\Dothem\\PRESENTATION_LAYER\\Tasks\\AddEditTaskWindow.xaml.cs",
-              "RelativeToolTip": "PRESENTATION_LAYER\\Tasks\\AddEditTaskWindow.xaml.cs",
-              "ViewState": "AgIAADAAAAAAAAAAAAAwwFYAAAAQAAAAAAAAAA==",
+              "Title": "MainWindow.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\khale\\Desktop\\Dothem\\PRESENTATION_LAYER\\MainWindow.xaml.cs",
+              "RelativeDocumentMoniker": "PRESENTATION_LAYER\\MainWindow.xaml.cs",
+              "ToolTip": "C:\\Users\\khale\\Desktop\\Dothem\\PRESENTATION_LAYER\\MainWindow.xaml.cs",
+              "RelativeToolTip": "PRESENTATION_LAYER\\MainWindow.xaml.cs",
+              "ViewState": "AgIAALoAAAAAAAAAAAAswMEAAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-26T16:05:32.48Z",
+              "WhenOpened": "2025-12-26T18:01:08.746Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 1,
               "Title": "SignUpWindow.xaml.cs",
               "DocumentMoniker": "C:\\Users\\khale\\Desktop\\Dothem\\PRESENTATION_LAYER\\Users\\SignUpWindow.xaml.cs",
               "RelativeDocumentMoniker": "PRESENTATION_LAYER\\Users\\SignUpWindow.xaml.cs",
               "ToolTip": "C:\\Users\\khale\\Desktop\\Dothem\\PRESENTATION_LAYER\\Users\\SignUpWindow.xaml.cs",
               "RelativeToolTip": "PRESENTATION_LAYER\\Users\\SignUpWindow.xaml.cs",
-              "ViewState": "AgIAABsAAAAAAAAAAAAswEYAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-26T17:34:24.069Z",
+              "WhenOpened": "2025-12-26T18:00:54.137Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 0,
               "Title": "LoginWindow.xaml.cs",
               "DocumentMoniker": "C:\\Users\\khale\\Desktop\\Dothem\\PRESENTATION_LAYER\\Users\\LoginWindow.xaml.cs",
               "RelativeDocumentMoniker": "PRESENTATION_LAYER\\Users\\LoginWindow.xaml.cs",
               "ToolTip": "C:\\Users\\khale\\Desktop\\Dothem\\PRESENTATION_LAYER\\Users\\LoginWindow.xaml.cs",
               "RelativeToolTip": "PRESENTATION_LAYER\\Users\\LoginWindow.xaml.cs",
-              "ViewState": "AgIAADYAAAAAAAAAAAAAAEoAAAAdAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-26T17:32:27.745Z",
+              "WhenOpened": "2025-12-26T18:00:17.03Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "TaskUserControl.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\khale\\Desktop\\Dothem\\PRESENTATION_LAYER\\Tasks\\TaskUserControl.xaml.cs",
-              "RelativeDocumentMoniker": "PRESENTATION_LAYER\\Tasks\\TaskUserControl.xaml.cs",
-              "ToolTip": "C:\\Users\\khale\\Desktop\\Dothem\\PRESENTATION_LAYER\\Tasks\\TaskUserControl.xaml.cs",
-              "RelativeToolTip": "PRESENTATION_LAYER\\Tasks\\TaskUserControl.xaml.cs",
-              "ViewState": "AgIAAFUAAAAAAAAAAAAkwGoAAAByAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-26T16:42:14.308Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "MainWindow.xaml",
-              "DocumentMoniker": "C:\\Users\\khale\\Desktop\\Dothem\\PRESENTATION_LAYER\\MainWindow.xaml",
-              "RelativeDocumentMoniker": "PRESENTATION_LAYER\\MainWindow.xaml",
-              "ToolTip": "C:\\Users\\khale\\Desktop\\Dothem\\PRESENTATION_LAYER\\MainWindow.xaml",
-              "RelativeToolTip": "PRESENTATION_LAYER\\MainWindow.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-12-26T16:09:46.778Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "TaskTypesData.cs",
-              "DocumentMoniker": "C:\\Users\\khale\\Desktop\\Dothem\\DATA_LAYER\\TaskTypesData.cs",
-              "RelativeDocumentMoniker": "DATA_LAYER\\TaskTypesData.cs",
-              "ToolTip": "C:\\Users\\khale\\Desktop\\Dothem\\DATA_LAYER\\TaskTypesData.cs",
-              "RelativeToolTip": "DATA_LAYER\\TaskTypesData.cs",
-              "ViewState": "AgIAAO4AAAAAAAAAAAAmwPwAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-26T16:39:20.055Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "TaskType.cs",
-              "DocumentMoniker": "C:\\Users\\khale\\Desktop\\Dothem\\BUSINESS_LAYER\\TaskType.cs",
-              "RelativeDocumentMoniker": "BUSINESS_LAYER\\TaskType.cs",
-              "ToolTip": "C:\\Users\\khale\\Desktop\\Dothem\\BUSINESS_LAYER\\TaskType.cs",
-              "RelativeToolTip": "BUSINESS_LAYER\\TaskType.cs",
-              "ViewState": "AgIAAI4AAAAAAAAAAAAUwKwAAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-26T15:21:05.051Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 3,
               "Title": "LoginWindow.xaml",
               "DocumentMoniker": "C:\\Users\\khale\\Desktop\\Dothem\\PRESENTATION_LAYER\\Users\\LoginWindow.xaml",
               "RelativeDocumentMoniker": "PRESENTATION_LAYER\\Users\\LoginWindow.xaml",
               "ToolTip": "C:\\Users\\khale\\Desktop\\Dothem\\PRESENTATION_LAYER\\Users\\LoginWindow.xaml",
               "RelativeToolTip": "PRESENTATION_LAYER\\Users\\LoginWindow.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-12-26T17:32:29.172Z",
+              "WhenOpened": "2025-12-26T18:00:11.139Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "MainWindow.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\khale\\Desktop\\Dothem\\PRESENTATION_LAYER\\MainWindow.xaml.cs",
-              "RelativeDocumentMoniker": "PRESENTATION_LAYER\\MainWindow.xaml.cs",
-              "ToolTip": "C:\\Users\\khale\\Desktop\\Dothem\\PRESENTATION_LAYER\\MainWindow.xaml.cs",
-              "RelativeToolTip": "PRESENTATION_LAYER\\MainWindow.xaml.cs",
-              "ViewState": "AgIAAA0AAAAAAAAAAAAAAL4AAACLAAAAAAAAAA==",
+              "DocumentIndex": 4,
+              "Title": "AddEditTaskTypeWindow.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\khale\\Desktop\\Dothem\\PRESENTATION_LAYER\\TaskTypes\\AddEditTaskTypeWindow.xaml.cs",
+              "RelativeDocumentMoniker": "PRESENTATION_LAYER\\TaskTypes\\AddEditTaskTypeWindow.xaml.cs",
+              "ToolTip": "C:\\Users\\khale\\Desktop\\Dothem\\PRESENTATION_LAYER\\TaskTypes\\AddEditTaskTypeWindow.xaml.cs",
+              "RelativeToolTip": "PRESENTATION_LAYER\\TaskTypes\\AddEditTaskTypeWindow.xaml.cs",
+              "ViewState": "AgIAAEsAAAAAAAAAAAAowFcAAAAWAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-26T16:20:33.326Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "App.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\khale\\Desktop\\Dothem\\PRESENTATION_LAYER\\App.xaml.cs",
-              "RelativeDocumentMoniker": "PRESENTATION_LAYER\\App.xaml.cs",
-              "ToolTip": "C:\\Users\\khale\\Desktop\\Dothem\\PRESENTATION_LAYER\\App.xaml.cs",
-              "RelativeToolTip": "PRESENTATION_LAYER\\App.xaml.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-26T17:43:29.508Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "App.config",
-              "DocumentMoniker": "C:\\Users\\khale\\Desktop\\Dothem\\PRESENTATION_LAYER\\App.config",
-              "RelativeDocumentMoniker": "PRESENTATION_LAYER\\App.config",
-              "ToolTip": "C:\\Users\\khale\\Desktop\\Dothem\\PRESENTATION_LAYER\\App.config",
-              "RelativeToolTip": "PRESENTATION_LAYER\\App.config",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
-              "WhenOpened": "2025-12-26T17:43:24.833Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "SignUpWindow.xaml",
-              "DocumentMoniker": "C:\\Users\\khale\\Desktop\\Dothem\\PRESENTATION_LAYER\\Users\\SignUpWindow.xaml",
-              "RelativeDocumentMoniker": "PRESENTATION_LAYER\\Users\\SignUpWindow.xaml",
-              "ToolTip": "C:\\Users\\khale\\Desktop\\Dothem\\PRESENTATION_LAYER\\Users\\SignUpWindow.xaml",
-              "RelativeToolTip": "PRESENTATION_LAYER\\Users\\SignUpWindow.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-12-26T17:31:07.333Z",
+              "WhenOpened": "2025-12-26T17:56:45.937Z",
               "EditorCaption": ""
             }
           ]

@@ -65,7 +65,7 @@ namespace PRESENTATION_LAYER
         {
 
             if (string.IsNullOrWhiteSpace(colorCode))
-                return false;
+                return true;
 
             try
             {
@@ -84,6 +84,9 @@ namespace PRESENTATION_LAYER
 
             string colorText = tbColor.Text;
             bool colorValid = IsValidColor(colorText);
+
+            if(Mode == enMode.Edit && tbName.Text == TaskType.Name)
+                return colorValid;
 
             bool nameNotEmpty = tbName.Text != string.Empty;
             bool nameUnique = clsTaskType.FindTaskType(tbName.Text) == null;

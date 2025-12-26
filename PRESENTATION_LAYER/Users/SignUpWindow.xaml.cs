@@ -1,12 +1,13 @@
 ﻿using System;
 using System.Windows;
-using System.Windows.Controls;
 using BUSINESS_LAYER;
 
 namespace PRESENTATION_LAYER.Users
 {
+
     public partial class SignUpWindow : Window
     {
+
         public SignUpWindow()
         {
             InitializeComponent();
@@ -15,15 +16,9 @@ namespace PRESENTATION_LAYER.Users
         private bool ValidateInput()
         {
 
-            if (string.IsNullOrEmpty(tbUsername.Text))
-                return false;
-
-            if (string.IsNullOrEmpty(pbPassword.Password))
-                return false;
-
-            if (pbPassword.Password != pbConfirmPassword.Password)
-                return false;
-
+            if (string.IsNullOrEmpty(tbUsername.Text)) return false;
+            if (string.IsNullOrEmpty(pbPassword.Password)) return false;
+            if (pbPassword.Password != pbConfirmPassword.Password) return false;
             return true;
 
         }
@@ -47,22 +42,28 @@ namespace PRESENTATION_LAYER.Users
             {
                 General.User = clsUser.FindUser(NewUser.Username, NewUser.Password);
 
-                clsTaskType TaskType = new clsTaskType
+                if (General.User != null)
                 {
-                    Name = "General",
-                    Description = "General tasks",
-                    Color = "#FFCCCCCC",
-                    UserID = General.User.UserID
-                };
+                    clsTaskType TaskType = new clsTaskType
+                    {
+                        Name = "General",
+                        Description = "General tasks",
+                        Color = "#FFCCCCCC",
+                        UserID = General.User.UserID
+                    };
 
-                TaskType.Save();
+                    TaskType.Save();
 
-                MessageBox.Show("User created successfully.", "Success", MessageBoxButton.OK, MessageBoxImage.Information);
+                    MessageBox.Show("User created successfully.", "Success", MessageBoxButton.OK, MessageBoxImage.Information);
 
-                MainWindow mainWindow = new MainWindow();
-                mainWindow.Show();
-
-                this.Close();
+                    MainWindow mainWindow = new MainWindow();
+                    mainWindow.Show();
+                    this.Close();
+                }
+                else
+                {
+                    MessageBox.Show("Error retrieving user after creation.", "Error", MessageBoxButton.OK, MessageBoxImage.Error);
+                }
             }
             else
             {

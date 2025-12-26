@@ -1,39 +1,15 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows;
-using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
 using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
-using System.Windows.Shapes;
 using BUSINESS_LAYER;
 
 namespace PRESENTATION_LAYER
 {
-
-    /// <summary>
-    /// Interaction logic for MainWindow.xaml
-    /// </summary>
     public partial class LoginWindow : Window
     {
-
         public LoginWindow()
         {
-
             InitializeComponent();
-
-            //to test main window directly
-            /*General.User = clsUser.FindUser("admin", "admin");
-            MainWindow MainWindow = new MainWindow();
-            MainWindow.Show();
-            this.Close();*/
-
         }
 
         private void btnEnter_Click(object sender, RoutedEventArgs e)
@@ -46,7 +22,7 @@ namespace PRESENTATION_LAYER
 
             clsUser user = clsUser.FindUser(Username, Password);
 
-            if(user == null)
+            if (user == null)
             {
                 MessageBox.Show("Invalid username or password.");
                 return;
@@ -55,11 +31,15 @@ namespace PRESENTATION_LAYER
             if (user.Status == clsUser.enStatus.Expired)
             {
                 MessageBox.Show("Your account has expired. Please contact support.");
+                return;
             }
             else if (user.Status == clsUser.enStatus.Banned)
             {
                 MessageBox.Show("Your account has been banned. Please contact support.");
+                return;
             }
+
+            General.User = user;
 
             MainWindow MainWindow = new MainWindow();
             MainWindow.Show();
@@ -73,10 +53,10 @@ namespace PRESENTATION_LAYER
 
             Users.SignUpWindow SignUpWindow = new Users.SignUpWindow();
             SignUpWindow.Show();
-
             this.Close();
 
         }
+
     }
 
 }
