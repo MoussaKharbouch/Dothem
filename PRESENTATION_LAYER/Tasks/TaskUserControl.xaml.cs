@@ -96,9 +96,17 @@ namespace PRESENTATION_LAYER
 
             if (MessageBox.Show("Are you sure you want to delete this task?", "Confirm Delete", MessageBoxButton.YesNo, MessageBoxImage.Warning) == MessageBoxResult.Yes)
             {
+
                 if (clsTask.DeleteTask(Task.TaskID))
+                {
                     MessageBox.Show("Task has been deleted successfully", "Succeeded", MessageBoxButton.OK, MessageBoxImage.Information);
-                DeleteFunc?.Invoke();
+                    DeleteFunc?.Invoke();
+                }
+                else
+                {
+                    MessageBox.Show("Task deletion failed", "Failed", MessageBoxButton.OK, MessageBoxImage.Error);
+                }
+                
             }
             else
                 MessageBox.Show("Deletion has been cancelled", "Canceled", MessageBoxButton.OK, MessageBoxImage.Information);

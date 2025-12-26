@@ -44,6 +44,8 @@ namespace PRESENTATION_LAYER
 
             DataTable Tasks = clsTask.GetTasks(TaskTypeID);
 
+            tbNoTasks.Visibility = (Tasks.Rows.Count == 0) ? Visibility.Visible : Visibility.Collapsed;
+
             foreach (DataRow row in Tasks.Rows)
             {
 
@@ -58,24 +60,12 @@ namespace PRESENTATION_LAYER
 
         }
 
-        private void Button_Click(object sender, RoutedEventArgs e)
-        {
-
-            if (General.User != null)
-            {
-
-                AddEditTaskWindow AddEditTask = new AddEditTaskWindow(ShowTasks, TaskTypeID);
-                AddEditTask.ShowDialog();
-
-            }
-
-        }
-
         private void FillTaskTypes()
         {
 
-            //Hardcoded User ID for test
             DataTable TaskTypes = clsTaskType.GetTaskTypes(General.User.UserID);
+
+            tbNoTaskTypes.Visibility = TaskTypes.Rows.Count == 0 ? Visibility.Visible : Visibility.Collapsed;
 
             foreach (DataRow TaskType in TaskTypes.Rows)
             {
@@ -86,8 +76,7 @@ namespace PRESENTATION_LAYER
 
         private void Window_Loaded(object sender, RoutedEventArgs e)
         {
-            FillTaskTypes();
-            Dispatcher.BeginInvoke(new Action(() => ColorTaskTypes()), System.Windows.Threading.DispatcherPriority.Loaded);
+            ShowTaskTypes();
             ShowTasks();
         }
 
@@ -132,6 +121,15 @@ namespace PRESENTATION_LAYER
 
         }
 
+        private void ShowTaskTypes()
+        {
+
+            lbTaskTypes.Items.Clear();
+            FillTaskTypes();
+            Dispatcher.BeginInvoke(new Action(() => ColorTaskTypes()), System.Windows.Threading.DispatcherPriority.Loaded);
+
+        }
+
         private void lbTaskTypes_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
 
@@ -153,6 +151,64 @@ namespace PRESENTATION_LAYER
 
         }
 
+        private void btnAddTaskType_Click(object sender, RoutedEventArgs e)
+        {
+
+            AddEditTaskTypeWindow AddTaskTypeWindow = new AddEditTaskTypeWindow(ShowTaskTypes);
+            AddTaskTypeWindow.ShowDialog();
+
+        }
+
+        private void btnEditTaskType_Click(object sender, RoutedEventArgs e)
+        {
+
+            AddEditTaskTypeWindow EditTaskTypeWindow = new AddEditTaskTypeWindow(clsTaskType.FindTaskType(TaskTypeID), ShowTaskTypes);
+            EditTaskTypeWindow.ShowDialog();
+
+        }
+
+        private void btnDeleteTaskType_Click(object sender, RoutedEventArgs e)
+        {
+
+            if (MessageBox.Show("Are you sure you want to delete this task type, and all tasks that are related to?", "Confirm Delete", MessageBoxButton.YesNo, MessageBoxImage.Warning) == MessageBoxResult.Yes)
+            {
+
+                if(clsTaskType.GetTaskTypes(General.User.UserID).Rows.Count == 1)
+                {
+                    MessageBox.Show("You must have at least one task type. Please add a new task type before deleting this one.", "Error", MessageBoxButton.OK, MessageBoxImage.Error);
+                    return;
+                }
+
+                if (clsTaskType.DeleteTaskType(TaskTypeID))
+                {
+                    MessageBox.Show("Task Type has been deleted successfully", "Succeeded", MessageBoxButton.OK, MessageBoxImage.Information);
+                    ShowTaskTypes();
+                    TaskTypeID = clsTaskType.GetTaskTypes(General.User.UserID).Rows.Count > 0 ? Convert.ToInt32(clsTaskType.GetTaskTypes(General.User.UserID).Rows[0]["TaskTypeID"]) : 0;
+                    ShowTasks();
+                }
+                else
+                {
+                    MessageBox.Show("An error occurred while deleting the task type", "Error", MessageBoxButton.OK, MessageBoxImage.Error);
+                }
+
+            }
+            else
+                MessageBox.Show("Deletion has been cancelled", "Canceled", MessageBoxButton.OK, MessageBoxImage.Information);
+
+        }
+
+        private void btnAddTask_Click(object sender, RoutedEventArgs e)
+        {
+
+            if (General.User != null)
+            {
+
+                AddEditTaskWindow AddEditTask = new AddEditTaskWindow(ShowTasks, TaskTypeID);
+                AddEditTask.ShowDialog();
+
+            }
+
+        }
     }
 
 }

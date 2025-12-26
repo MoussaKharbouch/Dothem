@@ -216,30 +216,43 @@ namespace DATA_LAYER
 
             int rowsAffected = 0;
 
-            SqlConnection connection = new SqlConnection(DataAccessSettings.ConnectionString);
-
-            string query = @"DELETE FROM [dbo].[TaskTypes]
-                             WHERE TaskTypeID = @TaskTypeID";
-
-            SqlCommand command = new SqlCommand(query, connection);
-            command.Parameters.AddWithValue("@TaskTypeID", TaskTypeID);
-
-            try
+            using (SqlConnection connection = new SqlConnection(DataAccessSettings.ConnectionString))
             {
 
                 connection.Open();
+                SqlTransaction transaction = connection.BeginTransaction();
 
-                rowsAffected = command.ExecuteNonQuery();
+                try
+                {
 
-            }
-            finally
-            {
-                connection.Close();
+                    using (SqlCommand cmdTasks = new SqlCommand("DELETE FROM [dbo].[Tasks] WHERE TaskTypeID = @TaskTypeID", connection, transaction))
+                    {
+                        cmdTasks.Parameters.AddWithValue("@TaskTypeID", TaskTypeID);
+                        rowsAffected += cmdTasks.ExecuteNonQuery();
+                    }
+
+
+                    using (SqlCommand cmdType = new SqlCommand("DELETE FROM [dbo].[TaskTypes] WHERE TaskTypeID = @TaskTypeID", connection, transaction))
+                    {
+                        cmdType.Parameters.AddWithValue("@TaskTypeID", TaskTypeID);
+                        rowsAffected += cmdType.ExecuteNonQuery();
+                    }
+
+                    transaction.Commit();
+
+                }
+                catch
+                {
+                    transaction.Rollback();
+                    throw;
+                }
+
             }
 
             return (rowsAffected > 0);
 
         }
+
 
         public static DataTable GetTaskTypes(int UserID)
         {
