@@ -85,8 +85,13 @@ namespace PRESENTATION_LAYER
             string colorText = tbColor.Text;
             bool colorValid = IsValidColor(colorText);
 
-            return (tbName.Text != string.Empty) && colorValid;
+            bool nameNotEmpty = tbName.Text != string.Empty;
+            bool nameUnique = clsTaskType.FindTaskType(tbName.Text) == null;
+
+            return nameNotEmpty && nameUnique && colorValid;
+
         }
+
 
 
         private bool Save()

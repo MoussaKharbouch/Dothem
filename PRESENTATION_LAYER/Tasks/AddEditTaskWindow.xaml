@@ -98,7 +98,7 @@
 
             <!-- Due Date -->
             <TextBlock Text="Due Date:"/>
-            <DatePicker x:Name="dpDueDate"/>
+            <DatePicker x:Name="dpDueDate" Height="32"/>
 
             <!-- Task Type -->
             <TextBlock Text="Task Type:"/>

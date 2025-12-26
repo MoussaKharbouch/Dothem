@@ -26,3 +26,5 @@ C:\Users\khale\Desktop\Dothem\PRESENTATION_LAYER\obj\Debug\Tasks\TaskUserControl
 C:\Users\khale\Desktop\Dothem\PRESENTATION_LAYER\obj\Debug\Tasks\TaskUserControl.baml
 C:\Users\khale\Desktop\Dothem\PRESENTATION_LAYER\obj\Debug\TaskTypes\AddEditTaskTypeWindow.baml
 C:\Users\khale\Desktop\Dothem\PRESENTATION_LAYER\obj\Debug\TaskTypes\AddEditTaskTypeWindow.g.cs
+C:\Users\khale\Desktop\Dothem\PRESENTATION_LAYER\obj\Debug\Users\SignUpWindow.baml
+C:\Users\khale\Desktop\Dothem\PRESENTATION_LAYER\obj\Debug\Users\SignUpWindow.g.cs

@@ -4,7 +4,7 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:PRESENTATION_LAYER"
-        mc:Ignorable="d" Height="500" Width="268" ResizeMode="NoResize" WindowStartupLocation="CenterScreen" Opacity="0.8" WindowStyle="SingleBorderWindow" Title="Dothem" Icon="/App_Icon.png">
+        mc:Ignorable="d" Height="522" Width="268" ResizeMode="NoResize" WindowStartupLocation="CenterScreen" Opacity="0.8" WindowStyle="SingleBorderWindow" Title="Dothem" Icon="/App_Icon.png">
     <Grid Background="#FF2B34AF">
         <Label Content="Login" HorizontalAlignment="Center" Margin="0,59,0,0" FontFamily="Segoe UI Semibold" FontSize="72" VerticalAlignment="Top" Foreground="WhiteSmoke"/>
         <Button x:Name="btnEnter" Content="Enter" HorizontalAlignment="Center" Margin="0,359,0,0" VerticalAlignment="Top" Width="78" Height="30" FontSize="18" Click="btnEnter_Click"/>
@@ -12,5 +12,6 @@
         <TextBlock TextWrapping="Wrap" Text="Password:" Margin="27,264,0,0" FontSize="18" HorizontalAlignment="Left" VerticalAlignment="Top" Foreground="WhiteSmoke"/>
         <TextBlock TextWrapping="Wrap" Text="Username:" Margin="27,200,0,0" FontSize="18" HorizontalAlignment="Left" VerticalAlignment="Top" Foreground="WhiteSmoke"/>
         <TextBox x:Name="tbPassword" HorizontalAlignment="Center" Height="24" Margin="0,288,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="214" UndoLimit="15" MaxLength="20"/>
+        <TextBlock x:Name="tbSignUp" HorizontalAlignment="Left" Margin="192,458,0,0" TextWrapping="Wrap" Text="Sign Up" VerticalAlignment="Top" Foreground="White" FontSize="14" TextDecorations="Underline" MouseLeftButtonDown="tbSignUp_MouseLeftButtonDown"/>
     </Grid>
 </Window>

@@ -29,10 +29,10 @@ namespace PRESENTATION_LAYER
             InitializeComponent();
 
             //to test main window directly
-            General.User = clsUser.FindUser("admin", "admin");
+            /*General.User = clsUser.FindUser("admin", "admin");
             MainWindow MainWindow = new MainWindow();
             MainWindow.Show();
-            this.Close();
+            this.Close();*/
 
         }
 
@@ -68,6 +68,15 @@ namespace PRESENTATION_LAYER
 
         }
 
+        private void tbSignUp_MouseLeftButtonDown(object sender, MouseButtonEventArgs e)
+        {
+
+            Users.SignUpWindow SignUpWindow = new Users.SignUpWindow();
+            SignUpWindow.Show();
+
+            this.Close();
+
+        }
     }
 
 }
