@@ -7,12 +7,14 @@
              mc:Ignorable="d" 
              d:DesignHeight="80" d:DesignWidth="350"
              MinHeight="80"
-             VerticalAlignment="Top" Loaded="UserControl_Loaded">
+             VerticalAlignment="Top"
+             Loaded="UserControl_Loaded">
 
-    <Border CornerRadius="8" Background="White" BorderBrush="#FFE6E9F0" BorderThickness="1" Padding="12" Margin="6">
+    <Border CornerRadius="12" Background="#FF2B2B50" BorderBrush="#FF3A3A60" BorderThickness="1" Padding="12" Margin="6">
         <Border.Effect>
-            <DropShadowEffect Color="#22000000" BlurRadius="8" ShadowDepth="2"/>
+            <DropShadowEffect Color="#22000000" BlurRadius="6" ShadowDepth="2"/>
         </Border.Effect>
+
         <Grid>
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="Auto"/>
@@ -21,18 +23,87 @@
             </Grid.ColumnDefinitions>
 
             <!-- Checkbox for completion -->
-            <CheckBox x:Name="chkCompleted" VerticalAlignment="Top" Margin="0,4,12,0" Click="chkCompleted_Click"/>
+            <CheckBox x:Name="chkCompleted"
+                      VerticalAlignment="Center"
+                      Margin="0,0,12,0"
+                      Width="20"
+                      Height="20"
+                      Background="#FF4C6EF5"
+                      Foreground="White"
+                      BorderThickness="0"
+                      Click="chkCompleted_Click"/>
 
             <!-- Left: Task Info -->
-            <StackPanel Grid.Column="1" Orientation="Vertical" VerticalAlignment="Top">
-                <TextBlock x:Name="tbTaskName" Text="Task Name" FontSize="16" FontWeight="SemiBold" Foreground="#333"/>
-                <TextBlock x:Name="tbDescription" Text="Task description goes here..." FontSize="12" Foreground="#666" TextWrapping="Wrap" Margin="0,4,0,0"/>
+            <StackPanel Grid.Column="1" Orientation="Vertical" VerticalAlignment="Center">
+                <TextBlock x:Name="tbTaskName"
+                           Text="Task Name"
+                           FontSize="16"
+                           FontWeight="SemiBold"
+                           Foreground="White"/>
+                <TextBlock x:Name="tbDescription"
+                           Text="Task description goes here..."
+                           FontSize="12"
+                           Foreground="#CCCCCC"
+                           TextWrapping="Wrap"
+                           Margin="0,4,0,0"/>
             </StackPanel>
 
             <!-- Right: Optional icons -->
             <StackPanel Grid.Column="2" Orientation="Horizontal" VerticalAlignment="Center">
-                <Button x:Name="btnEdit" Content="✏️" Width="28" Height="28" Background="#FF2B34AF" Foreground="White" BorderThickness="0" Cursor="Hand" Margin="0,0,6,0" Click="btnEdit_Click"/>
-                <Button x:Name="btnDelete" Content="🗑️" Width="28" Height="28" Background="#FFEE5C5C" Foreground="White" BorderThickness="0" Cursor="Hand" Click="btnDelete_Click"/>
+
+                <!-- EDIT BUTTON -->
+                <Button x:Name="btnEdit"
+            Width="28" Height="28"
+            Margin="0,0,6,0"
+            Cursor="Hand"
+            Click="btnEdit_Click">
+                    <Button.Template>
+                        <ControlTemplate TargetType="Button">
+                            <Border x:Name="b" Width="28" Height="28" CornerRadius="14" Background="#FF4C6EF5">
+                                <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                            </Border>
+                            <ControlTemplate.Triggers>
+                                <Trigger Property="IsMouseOver" Value="True">
+                                    <Setter TargetName="b" Property="Background" Value="#FF6D85FF"/>
+                                </Trigger>
+                                <Trigger Property="IsPressed" Value="True">
+                                    <Setter TargetName="b" Property="Opacity" Value="0.85"/>
+                                </Trigger>
+                                <Trigger Property="IsEnabled" Value="False">
+                                    <Setter TargetName="b" Property="Opacity" Value="0.5"/>
+                                </Trigger>
+                            </ControlTemplate.Triggers>
+                        </ControlTemplate>
+                    </Button.Template>
+                    <TextBlock Text="✏️" Foreground="White" FontSize="14" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+                </Button>
+
+                <!-- DELETE BUTTON -->
+                <Button x:Name="btnDelete"
+            Width="28" Height="28"
+            Cursor="Hand"
+            Click="btnDelete_Click">
+                    <Button.Template>
+                        <ControlTemplate TargetType="Button">
+                            <Border x:Name="b" Width="28" Height="28" CornerRadius="14" Background="#FFEE5C5C">
+                                <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                            </Border>
+                            <ControlTemplate.Triggers>
+                                <Trigger Property="IsMouseOver" Value="True">
+                                    <Setter TargetName="b" Property="Background" Value="#FFFF7070"/>
+                                </Trigger>
+                                <Trigger Property="IsPressed" Value="True">
+                                    <Setter TargetName="b" Property="Opacity" Value="0.85"/>
+                                </Trigger>
+                                <Trigger Property="IsEnabled" Value="False">
+                                    <Setter TargetName="b" Property="Opacity" Value="0.5"/>
+                                </Trigger>
+                            </ControlTemplate.Triggers>
+                        </ControlTemplate>
+                    </Button.Template>
+                    <TextBlock Text="🗑️" Foreground="White" FontSize="14" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+                </Button>
+
             </StackPanel>
         </Grid>
     </Border>
