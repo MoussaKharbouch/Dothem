@@ -14,7 +14,7 @@ namespace PRESENTATION_LAYER
 
         private void btnEnter_Click(object sender, RoutedEventArgs e)
         {
-            Login(tbUsername.Text, tbPassword.Text);
+            Login(tbUsername.Text, tbPassword.Password);
         }
 
         private void Login(string Username, string Password)
