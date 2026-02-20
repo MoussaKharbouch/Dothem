@@ -52,9 +52,10 @@ namespace PRESENTATION_LAYER
 
             tbTaskName.Text = Task.Name;
 
-            // If description is longer than 100 characters, truncate it and add ...
+            //If description is longer than 100 characters then truncate it and add ...
             tbDescription.Text = (Task.Description.Length > 50) ? Task.Description.Substring(0, 100) + "..." : Task.Description;
 
+            //Every task control has a tag that saves task id
             this.Tag = Task.TaskID.ToString();
 
             if (Task.Status == clsTask.enStatus.Completed)
@@ -65,6 +66,7 @@ namespace PRESENTATION_LAYER
 
         }
 
+        //Complete task
         private void chkCompleted_Click(object sender, RoutedEventArgs e)
         {
 

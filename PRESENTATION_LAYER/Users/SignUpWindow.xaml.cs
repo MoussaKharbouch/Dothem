@@ -32,6 +32,7 @@ namespace PRESENTATION_LAYER.Users
                 return;
             }
 
+            //Make a new user with the new informations
             clsUser NewUser = new clsUser
             {
                 Username = tbUsername.Text,
@@ -44,6 +45,8 @@ namespace PRESENTATION_LAYER.Users
 
                 if (General.User != null)
                 {
+
+                    //Add default task type so user can use it
                     clsTaskType TaskType = new clsTaskType
                     {
                         Name = "General",
@@ -56,9 +59,11 @@ namespace PRESENTATION_LAYER.Users
 
                     MessageBox.Show("User created successfully.", "Success", MessageBoxButton.OK, MessageBoxImage.Information);
 
+                    //Log in the new user
                     MainWindow mainWindow = new MainWindow();
                     mainWindow.Show();
                     this.Close();
+
                 }
                 else
                 {

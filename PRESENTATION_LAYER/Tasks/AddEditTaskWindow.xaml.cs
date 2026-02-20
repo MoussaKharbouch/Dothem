@@ -28,6 +28,7 @@ namespace PRESENTATION_LAYER
         enum enMode { Add, Edit }
         enMode Mode;
 
+        //Constructor for adding new task
         public AddEditTaskWindow(Action Save_Event, int TaskTypeID)
         {
             InitializeComponent();
@@ -37,6 +38,7 @@ namespace PRESENTATION_LAYER
             dpDueDate.SelectedDate = DateTime.Now;
             FillTaskTypes();
 
+            //Select task type that user has choosen
             clsTaskType selectedType = clsTaskType.FindTaskType(TaskTypeID);
             if (selectedType != null)
             {
@@ -47,6 +49,7 @@ namespace PRESENTATION_LAYER
 
         }
 
+        //Constructor for editing task
         public AddEditTaskWindow(clsTask Task, Action Save_Event)
         {
             InitializeComponent();
@@ -57,10 +60,10 @@ namespace PRESENTATION_LAYER
             ShowData(Task);
         }
 
+        //Fill task types in a list
         private void FillTaskTypes()
         {
 
-            //Hardcoded User ID for test
             DataTable TaskTypes = clsTaskType.GetTaskTypes(General.User.UserID);
 
             foreach (DataRow TaskType in TaskTypes.Rows)
@@ -70,6 +73,7 @@ namespace PRESENTATION_LAYER
 
         }
 
+        //Show task information
         private void ShowData(clsTask Task)
         {
 
