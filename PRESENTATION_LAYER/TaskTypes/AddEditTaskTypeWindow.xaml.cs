@@ -30,6 +30,7 @@ namespace PRESENTATION_LAYER
         enum enMode { Add, Edit }
         enMode Mode;
 
+        //Constructor for adding new task type
         public AddEditTaskTypeWindow(Action Save_Event)
         {
             InitializeComponent();
@@ -39,6 +40,7 @@ namespace PRESENTATION_LAYER
             tbDateOfCreation.Text = DateTime.Now.ToShortDateString();
         }
 
+        //Constructor for editing task type
         public AddEditTaskTypeWindow(clsTaskType TaskType, Action Save_Event)
         {
             InitializeComponent();
@@ -48,6 +50,7 @@ namespace PRESENTATION_LAYER
             ShowData(TaskType);
         }
 
+        //Show task type info
         private void ShowData(clsTaskType TaskType)
         {
 
@@ -61,6 +64,7 @@ namespace PRESENTATION_LAYER
 
         }
 
+        //Check if user has choosen a valid color
         private bool IsValidColor(string colorCode)
         {
 
@@ -78,7 +82,6 @@ namespace PRESENTATION_LAYER
             }
 
         }
-
         private bool ValidateInput()
         {
 
@@ -88,6 +91,7 @@ namespace PRESENTATION_LAYER
             if(Mode == enMode.Edit && tbName.Text == TaskType.Name)
                 return colorValid;
 
+            //If task type is new then check if its name is unique
             bool nameNotEmpty = tbName.Text != string.Empty;
             bool nameUnique = clsTaskType.FindTaskType(tbName.Text) == null;
 
