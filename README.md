@@ -20,8 +20,6 @@
     - [Database Configuration](#database-configuration)
     - [Building and Running the Project](#building-and-running-the-project)
 6. [Future Enhancements](#future-enhancements)
-7. [Contribution Guidelines](#contribution-guidelines)
-8. [Contact Information](#contact-information)
 
 ---
 
@@ -117,18 +115,6 @@ The [`PRESENTATION_LAYER`](https://github.com/MoussaKharbouch/Dothem/tree/main/P
 ## **Future Enhancements**
 
 We envision adding advanced features to the application in the future:
-- **Cloud Integration:** Allow for data synchronization across multiple devices using cloud services like AWS or Firebase.
-- **Mobile App Support:** Create a mobile application for on-the-go task management.
 - **Recurring Tasks:** Enable users to schedule recurring tasks (daily, weekly, monthly).
 - **Notification System:** Set up reminders and notifications for pending tasks.
 - **Search and Filter Options:** Introduce advanced filters for better task management.
-
----
-
-## **Contribution Guidelines**
-
-Interested in contributing? Follow these steps:
-1. Fork the repository by clicking the "Fork" button at the top-right corner of the page.
-2. Create a branch off the `main` branch:
-   ```bash
-   git checkout -b feature/new-feature-name
