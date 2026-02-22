@@ -12,6 +12,9 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
+using PRESENTATION_LAYER.Users;
+using PRESENTATION_LAYER.Tasks;
+using PRESENTATION_LAYER.TaskTypes;
 using BUSINESS_LAYER;
 
 namespace PRESENTATION_LAYER
@@ -183,7 +186,7 @@ namespace PRESENTATION_LAYER
             if (MessageBox.Show("Are you sure you want to delete this task type, and all tasks that are related to?", "Confirm Delete", MessageBoxButton.YesNo, MessageBoxImage.Warning) == MessageBoxResult.Yes)
             {
 
-                if(clsTaskType.GetTaskTypes(General.User.UserID).Rows.Count == 1)
+                if (clsTaskType.GetTaskTypes(General.User.UserID).Rows.Count == 1)
                 {
                     MessageBox.Show("You must have at least one task type. Please add a new task type before deleting this one.", "Error", MessageBoxButton.OK, MessageBoxImage.Error);
                     return;

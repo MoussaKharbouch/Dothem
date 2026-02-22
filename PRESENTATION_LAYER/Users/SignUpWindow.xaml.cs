@@ -77,6 +77,15 @@ namespace PRESENTATION_LAYER.Users
 
         }
 
+        private void tbBackToLogin_MouseLeftButtonDown(object sender, System.Windows.Input.MouseButtonEventArgs e)
+        {
+
+            LoginWindow LoginWindow = new LoginWindow();
+            LoginWindow.Show();
+
+            this.Close();
+
+        }
     }
 
 }
