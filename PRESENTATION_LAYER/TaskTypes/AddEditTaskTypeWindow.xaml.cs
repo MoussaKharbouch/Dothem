@@ -14,7 +14,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
 using BUSINESS_LAYER;
 
-namespace PRESENTATION_LAYER
+namespace PRESENTATION_LAYER.TaskTypes
 {
 
     /// <summary>
@@ -88,7 +88,7 @@ namespace PRESENTATION_LAYER
             string colorText = tbColor.Text;
             bool colorValid = IsValidColor(colorText);
 
-            if(Mode == enMode.Edit && tbName.Text == TaskType.Name)
+            if (Mode == enMode.Edit && tbName.Text == TaskType.Name)
                 return colorValid;
 
             //If task type is new then check if its name is unique

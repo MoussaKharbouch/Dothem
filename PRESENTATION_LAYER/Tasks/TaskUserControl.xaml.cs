@@ -14,7 +14,7 @@ using System.Windows.Navigation;
 using System.Windows.Shapes;
 using BUSINESS_LAYER;
 
-namespace PRESENTATION_LAYER
+namespace PRESENTATION_LAYER.Tasks
 {
 
     /// <summary>
@@ -47,7 +47,7 @@ namespace PRESENTATION_LAYER
         private void UserControl_Loaded(object sender, RoutedEventArgs e)
         {
 
-            if (Task == null) 
+            if (Task == null)
                 return;
 
             tbTaskName.Text = Task.Name;
@@ -108,7 +108,7 @@ namespace PRESENTATION_LAYER
                 {
                     MessageBox.Show("Task deletion failed", "Failed", MessageBoxButton.OK, MessageBoxImage.Error);
                 }
-                
+
             }
             else
                 MessageBox.Show("Deletion has been cancelled", "Canceled", MessageBoxButton.OK, MessageBoxImage.Information);

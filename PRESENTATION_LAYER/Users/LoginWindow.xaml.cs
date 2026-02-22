@@ -3,7 +3,7 @@ using System.Windows;
 using System.Windows.Input;
 using BUSINESS_LAYER;
 
-namespace PRESENTATION_LAYER
+namespace PRESENTATION_LAYER.Users
 {
     public partial class LoginWindow : Window
     {

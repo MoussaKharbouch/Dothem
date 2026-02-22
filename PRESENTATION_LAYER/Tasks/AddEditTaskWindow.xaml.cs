@@ -14,7 +14,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
 using BUSINESS_LAYER;
 
-namespace PRESENTATION_LAYER
+namespace PRESENTATION_LAYER.Tasks
 {
     /// <summary>
     /// Interaction logic for AddEditTask.xaml
@@ -87,7 +87,7 @@ namespace PRESENTATION_LAYER
             cbStatus.SelectedIndex = (Task.Status == clsTask.enStatus.NotStarted) ? 0 : 1;
 
             clsTaskType TaskType = clsTaskType.FindTaskType(Task.TaskTypeID);
-            if(TaskType != null)
+            if (TaskType != null)
                 cbTaskType.SelectedIndex = cbTaskType.Items.IndexOf(TaskType.Name);
 
         }

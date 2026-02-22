@@ -4,84 +4,10 @@
         Title="Dothem"
         Height="540"
         Width="950"
-        Background="#FF1E1E2F"
+        Background="{DynamicResource WindowBackgroundBrush}"
         WindowStartupLocation="CenterScreen"
         Icon="/App_Icon.png"
         Loaded="Window_Loaded">
-
-    <Window.Resources>
-
-        <!-- COLORS -->
-        <SolidColorBrush x:Key="SidebarBrush" Color="#FF24243A"/>
-        <SolidColorBrush x:Key="CardBrush" Color="#FF2B2B50"/>
-        <SolidColorBrush x:Key="AccentBrush" Color="#FF4C6EF5"/>
-        <SolidColorBrush x:Key="AccentHoverBrush" Color="#FF6D85FF"/>
-        <SolidColorBrush x:Key="DangerBrush" Color="#FFE25555"/>
-
-        <!-- MODERN CIRCULAR BUTTON -->
-        <Style x:Key="CircularButton" TargetType="Button">
-            <Setter Property="Background" Value="{StaticResource AccentBrush}"/>
-            <Setter Property="Foreground" Value="White"/>
-            <Setter Property="BorderThickness" Value="0"/>
-            <Setter Property="FontWeight" Value="Bold"/>
-            <Setter Property="Cursor" Value="Hand"/>
-            <Setter Property="Width" Value="36"/>
-            <Setter Property="Height" Value="36"/>
-            <Setter Property="FontSize" Value="18"/>
-            <Setter Property="Template">
-                <Setter.Value>
-                    <ControlTemplate TargetType="Button">
-                        <Border x:Name="b"
-                                Background="{TemplateBinding Background}"
-                                CornerRadius="18">
-                            <ContentPresenter HorizontalAlignment="Center"
-                                              VerticalAlignment="Center"/>
-                        </Border>
-                        <ControlTemplate.Triggers>
-                            <Trigger Property="IsMouseOver" Value="True">
-                                <Setter TargetName="b" Property="Background" Value="{StaticResource AccentHoverBrush}"/>
-                            </Trigger>
-                            <Trigger Property="IsPressed" Value="True">
-                                <Setter TargetName="b" Property="Opacity" Value="0.85"/>
-                            </Trigger>
-                        </ControlTemplate.Triggers>
-                    </ControlTemplate>
-                </Setter.Value>
-            </Setter>
-        </Style>
-
-        <!-- TASK TYPE ITEM STYLE -->
-        <Style TargetType="ListBoxItem">
-            <Setter Property="Padding" Value="10,6"/>
-            <Setter Property="Margin" Value="4"/>
-            <Setter Property="HorizontalContentAlignment" Value="Stretch"/>
-            <Setter Property="Template">
-                <Setter.Value>
-                    <ControlTemplate TargetType="ListBoxItem">
-                        <Border x:Name="Bd"
-                                Background="{TemplateBinding Background}"
-                                CornerRadius="12"
-                                Padding="{TemplateBinding Padding}">
-                            <ContentPresenter VerticalAlignment="Center"/>
-                        </Border>
-                        <ControlTemplate.Triggers>
-                            <Trigger Property="IsMouseOver" Value="True">
-                                <Setter TargetName="Bd" Property="Opacity" Value="0.85"/>
-                            </Trigger>
-                            <Trigger Property="IsSelected" Value="True">
-                                <Setter TargetName="Bd" Property="BorderBrush" Value="White"/>
-                                <Setter TargetName="Bd" Property="BorderThickness" Value="2"/>
-                            </Trigger>
-                            <Trigger Property="IsEnabled" Value="False">
-                                <Setter Property="Opacity" Value="0.5"/>
-                            </Trigger>
-                        </ControlTemplate.Triggers>
-                    </ControlTemplate>
-                </Setter.Value>
-            </Setter>
-        </Style>
-
-    </Window.Resources>
 
     <Grid>
         <Grid.ColumnDefinitions>
@@ -110,7 +36,7 @@
                            Margin="0,10,0,20"/>
 
                 <Border Grid.Row="1"
-                        Background="{StaticResource CardBrush}"
+                        Background="{StaticResource CardBackgroundBrush}"
                         CornerRadius="10"
                         Padding="8">
 
@@ -158,7 +84,7 @@
         <!-- MAIN CONTENT -->
         <Border Grid.Column="1"
                 Margin="20"
-                Background="{StaticResource CardBrush}"
+                Background="{StaticResource CardBackgroundBrush}"
                 CornerRadius="12"
                 Padding="20">
 
